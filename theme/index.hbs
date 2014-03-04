@@ -1,0 +1,20 @@
+{{!< default}}
+<div class="row postLoop">
+    <div class="large-4 small-12 columns">
+        <div class=" blogTitle" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>
+            {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+            <h1 class="blog-title">{{@blog.title}}</h1>
+            <h2 class="blog-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+    {{#foreach posts}}
+    <div class="large-4 small-12 columns">
+        <div class="postItem">
+            <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"   }}</time> tagged {{tags prefix="on "}}</span>
+            <p>{{excerpt}}&hellip;</p>
+        </div>
+    </div>
+    {{/foreach}}
+</div>
+{{pagination}}

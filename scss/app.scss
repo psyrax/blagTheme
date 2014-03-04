@@ -38,3 +38,54 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+body{
+	background-color: #262621;
+}
+
+.container{
+	margin-bottom: 10em;
+}
+
+.blogTitle{
+	background-size:cover;
+	background-color:#657B6C;
+	color:#FF6B7C;
+}
+
+.blogTitle, .postItem{
+	height: 600px;
+	overflow:hidden;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+.blogTitle *{
+	color: #FF6B7C;
+}
+.postItem{
+	background-color:#BFCF75;
+}
+.postLoop{
+	margin-top:1em;
+}
+.post-title{
+	font-size:1.4em;
+}
+.post-title a{
+	color:#FC3272;
+}
+.post-meta{
+	color: #F7F5CA;
+	font-size:0.8em;
+}
+.postItem p{
+	color: #657B6C;
+	margin-top: 1.5em;
+	font-size:0.9em;
+}
+
+.postContent{
+	background-color:#FCFCDD;
+	margin-top: 1em;
+	padding: 2em;
+}
